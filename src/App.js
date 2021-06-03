@@ -25,7 +25,7 @@ function App() {
       return task.id === Number(id) ? { ...task, complete: !task.complete } : { ...task};
     });
     setToDoList(mapped);
-  },[])
+  },[todoList])
 
   const addTodo = (userInput ) => {
     let prevData = [...todoList];
